@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A5EED4A0236C2AC9003008F9 /* Inxis.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EED49E236C2AC9003008F9 /* Inxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5EED4C7236C3066003008F9 /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED4C6236C3066003008F9 /* Assistant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5EED49B236C2AC9003008F9 /* Inxis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Inxis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EED49E236C2AC9003008F9 /* Inxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inxis.h; sourceTree = "<group>"; };
 		A5EED49F236C2AC9003008F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5EED4C6236C3066003008F9 /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				A5EED49E236C2AC9003008F9 /* Inxis.h */,
 				A5EED49F236C2AC9003008F9 /* Info.plist */,
+				A5EED4C6236C3066003008F9 /* Assistant.swift */,
 			);
 			path = Inxis;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					A5EED49A236C2AC9003008F9 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5EED4C7236C3066003008F9 /* Assistant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		A5EED4A4236C2AC9003008F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 28KD37WDEK;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ixxxxx.Inxis;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		A5EED4A5236C2AC9003008F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 28KD37WDEK;
