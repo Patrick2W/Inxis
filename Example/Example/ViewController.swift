@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //showViewFrame()
-        showNowInfo()
+//        showViewFrame()
+//        showNowInfo()
     }
     
     func showViewFrame() {
@@ -41,6 +41,16 @@ class ViewController: UIViewController {
         print("weekdayOrdinal: \(now.inx.weekdayOrdinal)")
         print("weekOfMonth: \(now.inx.weekOfMonth)")
         print("weekOfYear: \(now.inx.weekOfYear)")
+        
+        print(now.inx.toString("yyyy-MM-dd"))
+        let adding = now.inx.date(byAdding: 0, months: 1, years: -1) as NSDate?
+        if let add = adding {
+            print("result: " + add.inx.toString("yyyy-MM-dd"))
+        }
+        
+        if now.inx.yesterday.inx.isYesterday {
+            print("Yesterday !!!!!")
+        }
     }
     
 }
