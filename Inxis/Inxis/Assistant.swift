@@ -9,17 +9,17 @@
 import class Foundation.NSObject
 
 public struct Assistant<Target> {
-    public let target: Target
-    public init(_ target: Target) {
+    let target: Target
+    init(_ target: Target) {
         self.target = target
     }
 }
 
 public protocol AssistantProtocol {
     associatedtype TargetBase
-    static var inx: Assistant<Self>.Type { get }
+    static var inx: Assistant<TargetBase>.Type { get set }
     
-    var inx: Assistant<Self>.Type { get }
+    var inx: Assistant<TargetBase> { get set }
 }
 
 public extension AssistantProtocol {
@@ -28,11 +28,19 @@ public extension AssistantProtocol {
         get {
             return Assistant<Self>.self
         }
+        set {
+            
+        }
     }
     
     var inx: Assistant<Self> {
         get {
             return Assistant(self)
         }
+        set {
+            
+        }
     }
 }
+
+extension NSObject: AssistantProtocol { }
