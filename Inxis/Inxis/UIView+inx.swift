@@ -125,4 +125,29 @@ public extension Assistant where Target: UIView {
             target.subviews.last?.removeFromSuperview()
         }
     }
+    
+    var cornerRadius: CGFloat {
+        set {
+            target.layer.cornerRadius = newValue
+            target.layer.masksToBounds = newValue > 0
+        }
+        get {
+            return target.layer.cornerRadius
+        }
+    }
+    
+    func setRadius(radius: CGFloat, rectCorner: UIRectCorner) {
+        if #available(iOS 11.0, *) {
+            target.layer.cornerRadius = radius
+            target.layer.maskedCorners = CACornerMask(rawValue: rectCorner.rawValue)
+        } else {
+            let path = UIBezierPath(roundedRect: target.bounds,
+                                    byRoundingCorners: rectCorner,
+                                    cornerRadii: CGSize(width: radius, height: radius))
+            let mask = CAShapeLayer()
+            mask.frame = target.bounds
+            mask.path = path.cgPath
+            target.layer.mask = mask
+        }
+    }
 }
