@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51CB119237AA61A00683A43 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CB118237AA61A00683A43 /* DetailViewController.swift */; };
 		A5C9CBE423700DEE00ADD94E /* Inxis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C9CBE323700DEE00ADD94E /* Inxis.framework */; };
 		A5C9CBE523700DEE00ADD94E /* Inxis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5C9CBE323700DEE00ADD94E /* Inxis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5EED4B3236C2B33003008F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED4B2236C2B33003008F9 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A51CB118237AA61A00683A43 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A5C9CBE323700DEE00ADD94E /* Inxis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Inxis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EED4AF236C2B33003008F9 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EED4B2236C2B33003008F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				A5EED4B2236C2B33003008F9 /* AppDelegate.swift */,
 				A5EED4B4236C2B33003008F9 /* SceneDelegate.swift */,
 				A5EED4B6236C2B33003008F9 /* ViewController.swift */,
+				A51CB118237AA61A00683A43 /* DetailViewController.swift */,
 				A5EED4B8236C2B33003008F9 /* Main.storyboard */,
 				A5EED4BB236C2B44003008F9 /* Assets.xcassets */,
 				A5EED4BD236C2B44003008F9 /* LaunchScreen.storyboard */,
@@ -169,6 +172,7 @@
 				A5EED4B7236C2B33003008F9 /* ViewController.swift in Sources */,
 				A5EED4B3236C2B33003008F9 /* AppDelegate.swift in Sources */,
 				A5EED4B5236C2B33003008F9 /* SceneDelegate.swift in Sources */,
+				A51CB119237AA61A00683A43 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         
 //        showViewFrame()
 //        showNowInfo()
+//        setGradientBackground()
     }
     
     func showViewFrame() {
@@ -53,5 +54,17 @@ class ViewController: UIViewController {
         }
     }
     
+    func setGradientBackground() {
+        
+//        self.view.backgroundColor = UIColor.inx.hex(0x4da9ff)
+//        let color = UIColor.inx.gradient([.black, .white], size: CGSize(width: view.inx.width, height: 1))
+//        self.view.backgroundColor = color
+        self.view.backgroundColor = UIColor.inx.random
+    }
+    
+    @IBAction func pushButtonTouchHandler() {
+        let detail = DetailViewController.inx.load("Main", idfer: "DetailViewController")
+        self.inx.push(to: detail, transition: .curlUp)
+    }
 }
 
