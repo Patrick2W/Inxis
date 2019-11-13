@@ -10,6 +10,12 @@
 		A51CB113237A548600683A43 /* NSFileManager+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CB112237A548600683A43 /* NSFileManager+inx.swift */; };
 		A51CB117237A81BC00683A43 /* UIColor+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CB116237A81BC00683A43 /* UIColor+inx.swift */; };
 		A51CB11B237AAAF100683A43 /* UIWindow+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CB11A237AAAF100683A43 /* UIWindow+inx.swift */; };
+		A5B5782F237BD7D6000350DE /* UIImage+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B5782E237BD7D6000350DE /* UIImage+inx.swift */; };
+		A5B57831237BE069000350DE /* UILabel+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B57830237BE069000350DE /* UILabel+inx.swift */; };
+		A5B57833237BE184000350DE /* UIDevice+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B57832237BE184000350DE /* UIDevice+inx.swift */; };
+		A5B57835237BEF6E000350DE /* NSString+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B57834237BEF6E000350DE /* NSString+inx.swift */; };
+		A5B57837237BF0CE000350DE /* NSData+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B57836237BF0CE000350DE /* NSData+inx.swift */; };
+		A5B57839237BF9D3000350DE /* UIGestureRecognizer+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B57838237BF9D3000350DE /* UIGestureRecognizer+inx.swift */; };
 		A5C9CBD5236FB3F900ADD94E /* UIView+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9CBD4236FB3F900ADD94E /* UIView+inx.swift */; };
 		A5C9CBD7236FCE2C00ADD94E /* NSDate+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9CBD6236FCE2C00ADD94E /* NSDate+inx.swift */; };
 		A5CB8FAE23795F31006FA501 /* UIViewController+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB8FAD23795F31006FA501 /* UIViewController+inx.swift */; };
@@ -21,6 +27,12 @@
 		A51CB112237A548600683A43 /* NSFileManager+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSFileManager+inx.swift"; sourceTree = "<group>"; };
 		A51CB116237A81BC00683A43 /* UIColor+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+inx.swift"; sourceTree = "<group>"; };
 		A51CB11A237AAAF100683A43 /* UIWindow+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+inx.swift"; sourceTree = "<group>"; };
+		A5B5782E237BD7D6000350DE /* UIImage+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+inx.swift"; sourceTree = "<group>"; };
+		A5B57830237BE069000350DE /* UILabel+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+inx.swift"; sourceTree = "<group>"; };
+		A5B57832237BE184000350DE /* UIDevice+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+inx.swift"; sourceTree = "<group>"; };
+		A5B57834237BEF6E000350DE /* NSString+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+inx.swift"; sourceTree = "<group>"; };
+		A5B57836237BF0CE000350DE /* NSData+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSData+inx.swift"; sourceTree = "<group>"; };
+		A5B57838237BF9D3000350DE /* UIGestureRecognizer+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+inx.swift"; sourceTree = "<group>"; };
 		A5C9CBD4236FB3F900ADD94E /* UIView+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+inx.swift"; sourceTree = "<group>"; };
 		A5C9CBD6236FCE2C00ADD94E /* NSDate+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+inx.swift"; sourceTree = "<group>"; };
 		A5CB8FAD23795F31006FA501 /* UIViewController+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+inx.swift"; sourceTree = "<group>"; };
@@ -46,6 +58,8 @@
 			children = (
 				A5C9CBD6236FCE2C00ADD94E /* NSDate+inx.swift */,
 				A51CB112237A548600683A43 /* NSFileManager+inx.swift */,
+				A5B57834237BEF6E000350DE /* NSString+inx.swift */,
+				A5B57836237BF0CE000350DE /* NSData+inx.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -57,6 +71,10 @@
 				A51CB116237A81BC00683A43 /* UIColor+inx.swift */,
 				A5CB8FAD23795F31006FA501 /* UIViewController+inx.swift */,
 				A51CB11A237AAAF100683A43 /* UIWindow+inx.swift */,
+				A5B5782E237BD7D6000350DE /* UIImage+inx.swift */,
+				A5B57830237BE069000350DE /* UILabel+inx.swift */,
+				A5B57832237BE184000350DE /* UIDevice+inx.swift */,
+				A5B57838237BF9D3000350DE /* UIGestureRecognizer+inx.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -170,12 +188,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51CB113237A548600683A43 /* NSFileManager+inx.swift in Sources */,
+				A5B57833237BE184000350DE /* UIDevice+inx.swift in Sources */,
 				A5CB8FAE23795F31006FA501 /* UIViewController+inx.swift in Sources */,
 				A5C9CBD5236FB3F900ADD94E /* UIView+inx.swift in Sources */,
+				A5B57837237BF0CE000350DE /* NSData+inx.swift in Sources */,
+				A5B57835237BEF6E000350DE /* NSString+inx.swift in Sources */,
 				A51CB11B237AAAF100683A43 /* UIWindow+inx.swift in Sources */,
+				A5B57831237BE069000350DE /* UILabel+inx.swift in Sources */,
+				A5B57839237BF9D3000350DE /* UIGestureRecognizer+inx.swift in Sources */,
 				A51CB117237A81BC00683A43 /* UIColor+inx.swift in Sources */,
 				A5C9CBD7236FCE2C00ADD94E /* NSDate+inx.swift in Sources */,
 				A5EED4C7236C3066003008F9 /* Assistant.swift in Sources */,
+				A5B5782F237BD7D6000350DE /* UIImage+inx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
