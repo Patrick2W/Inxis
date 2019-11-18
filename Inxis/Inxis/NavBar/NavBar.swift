@@ -40,7 +40,7 @@ public class NavBar: UINavigationBar {
     }
     
     private func updateBackgroundImage(image: UIImage?) {
-        if let current = self.shadowImage {
+        if let current = self.backgroundImage(for: .default) {
             if !current.isSame(as: image) {
                 setBackgroundImage(image, for: .default)
             }

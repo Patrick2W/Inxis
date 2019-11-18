@@ -26,9 +26,13 @@ class FakeBar: UIToolbar {
         }
         updateBarBgAlpha(alpha: config.alpha)
         updateBackgroundImage(image: config.image)
-        self.barTintColor = config.tintColor
-        self.isTranslucent = config.alpha < 1.0
-        self.barStyle = config.style
+        barTintColor = config.tintColor
+        barStyle = config.style
+        if !config.translucent {
+            isTranslucent = config.alpha < 1.0
+        } else {
+            isTranslucent = true
+        }
     }
     
     private func updateBarBgAlpha(alpha: Float) {

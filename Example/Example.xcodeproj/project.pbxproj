@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D5A3E7A2382F826001DDB8A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A3E792382F826001DDB8A /* NavigationController.swift */; };
 		A51CB119237AA61A00683A43 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CB118237AA61A00683A43 /* DetailViewController.swift */; };
 		A5C9CBE423700DEE00ADD94E /* Inxis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C9CBE323700DEE00ADD94E /* Inxis.framework */; };
 		A5C9CBE523700DEE00ADD94E /* Inxis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5C9CBE323700DEE00ADD94E /* Inxis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -33,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7D5A3E792382F826001DDB8A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A51CB118237AA61A00683A43 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A5C9CBE323700DEE00ADD94E /* Inxis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Inxis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EED4AF236C2B33003008F9 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				A5EED4B4236C2B33003008F9 /* SceneDelegate.swift */,
 				A5EED4B6236C2B33003008F9 /* ViewController.swift */,
 				A51CB118237AA61A00683A43 /* DetailViewController.swift */,
+				7D5A3E792382F826001DDB8A /* NavigationController.swift */,
 				A5EED4B8236C2B33003008F9 /* Main.storyboard */,
 				A5EED4BB236C2B44003008F9 /* Assets.xcassets */,
 				A5EED4BD236C2B44003008F9 /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 			files = (
 				A5EED4B7236C2B33003008F9 /* ViewController.swift in Sources */,
 				A5EED4B3236C2B33003008F9 /* AppDelegate.swift in Sources */,
+				7D5A3E7A2382F826001DDB8A /* NavigationController.swift in Sources */,
 				A5EED4B5236C2B33003008F9 /* SceneDelegate.swift in Sources */,
 				A51CB119237AA61A00683A43 /* DetailViewController.swift in Sources */,
 			);

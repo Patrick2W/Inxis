@@ -38,15 +38,15 @@ public struct BarConfig {
     /// bar tint color, default nil
     public var tintColor: UIColor?
     
-    init(titleColor: UIColor? = nil,
-         titleFont: UIFont? = nil,
-         image: UIImage? = nil,
-         shadowImage: UIImage? = nil,
-         translucent: Bool = true,
-         hidden: Bool = false,
-         alpha: Float = 1.0,
-         style: UIBarStyle = .default,
-         tintColor: UIColor? = nil) {
+    public init(titleColor: UIColor? = nil,
+                titleFont: UIFont? = nil,
+                image: UIImage? = nil,
+                shadowImage: UIImage? = nil,
+                translucent: Bool = true,
+                hidden: Bool = false,
+                alpha: Float = 1.0,
+                style: UIBarStyle = .default,
+                tintColor: UIColor? = nil) {
         self.titleColor = titleColor
         self.titleFont = titleFont
         self.image = image
@@ -62,7 +62,7 @@ public struct BarConfig {
 extension BarConfig: Equatable {
     
     public static func == (lhs: BarConfig, rhs: BarConfig) -> Bool {
-        if lhs.hidden == rhs.hidden {
+        if lhs.hidden || rhs.hidden {
             return true
         }
         if lhs.translucent != rhs.translucent {

@@ -13,6 +13,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let img = UIImage.inx.image(.blue)
+        let img = UIImage.inx.gradient([UIColor.red, UIColor.yellow],
+                                       size: CGSize(width: view.inx.width, height: 88))
+        barConfig = BarConfig(image: img, translucent: false)
         
 //        showViewFrame()
 //        showNowInfo()
