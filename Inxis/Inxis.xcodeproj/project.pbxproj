@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5177BC823823235008603A0 /* FakeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5177BC723823235008603A0 /* FakeBar.swift */; };
+		A5177BCA23823372008603A0 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5177BC923823372008603A0 /* Transition.swift */; };
+		A5177BCC23824DD9008603A0 /* Equals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5177BCB23824DD9008603A0 /* Equals.swift */; };
+		A5177BCE23827193008603A0 /* BarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5177BCD23827193008603A0 /* BarConfig.swift */; };
+		A5177BD0238290A7008603A0 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5177BCF238290A7008603A0 /* NavBar.swift */; };
+		A5177BD223829CB7008603A0 /* UIViewController+NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5177BD123829CB7008603A0 /* UIViewController+NavBar.swift */; };
 		A51CB113237A548600683A43 /* NSFileManager+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CB112237A548600683A43 /* NSFileManager+inx.swift */; };
 		A51CB117237A81BC00683A43 /* UIColor+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CB116237A81BC00683A43 /* UIColor+inx.swift */; };
 		A51CB11B237AAAF100683A43 /* UIWindow+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51CB11A237AAAF100683A43 /* UIWindow+inx.swift */; };
@@ -24,6 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5177BC723823235008603A0 /* FakeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBar.swift; sourceTree = "<group>"; };
+		A5177BC923823372008603A0 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		A5177BCB23824DD9008603A0 /* Equals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equals.swift; sourceTree = "<group>"; };
+		A5177BCD23827193008603A0 /* BarConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarConfig.swift; sourceTree = "<group>"; };
+		A5177BCF238290A7008603A0 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		A5177BD123829CB7008603A0 /* UIViewController+NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavBar.swift"; sourceTree = "<group>"; };
 		A51CB112237A548600683A43 /* NSFileManager+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSFileManager+inx.swift"; sourceTree = "<group>"; };
 		A51CB116237A81BC00683A43 /* UIColor+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+inx.swift"; sourceTree = "<group>"; };
 		A51CB11A237AAAF100683A43 /* UIWindow+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+inx.swift"; sourceTree = "<group>"; };
@@ -53,6 +65,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5177BC623822FD8008603A0 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				A5177BCF238290A7008603A0 /* NavBar.swift */,
+				A5177BC723823235008603A0 /* FakeBar.swift */,
+				A5177BC923823372008603A0 /* Transition.swift */,
+				A5177BCD23827193008603A0 /* BarConfig.swift */,
+				A5177BCB23824DD9008603A0 /* Equals.swift */,
+				A5177BD123829CB7008603A0 /* UIViewController+NavBar.swift */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
 		A51CB114237A640F00683A43 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +127,7 @@
 				A5EED4C6236C3066003008F9 /* Assistant.swift */,
 				A51CB115237A641E00683A43 /* UIKit */,
 				A51CB114237A640F00683A43 /* Foundation */,
+				A5177BC623822FD8008603A0 /* NavBar */,
 				A5EED49F236C2AC9003008F9 /* Info.plist */,
 			);
 			path = Inxis;
@@ -188,15 +214,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51CB113237A548600683A43 /* NSFileManager+inx.swift in Sources */,
+				A5177BCA23823372008603A0 /* Transition.swift in Sources */,
+				A5177BCC23824DD9008603A0 /* Equals.swift in Sources */,
 				A5B57833237BE184000350DE /* UIDevice+inx.swift in Sources */,
+				A5177BCE23827193008603A0 /* BarConfig.swift in Sources */,
 				A5CB8FAE23795F31006FA501 /* UIViewController+inx.swift in Sources */,
 				A5C9CBD5236FB3F900ADD94E /* UIView+inx.swift in Sources */,
+				A5177BD223829CB7008603A0 /* UIViewController+NavBar.swift in Sources */,
 				A5B57837237BF0CE000350DE /* NSData+inx.swift in Sources */,
 				A5B57835237BEF6E000350DE /* NSString+inx.swift in Sources */,
 				A51CB11B237AAAF100683A43 /* UIWindow+inx.swift in Sources */,
 				A5B57831237BE069000350DE /* UILabel+inx.swift in Sources */,
+				A5177BD0238290A7008603A0 /* NavBar.swift in Sources */,
 				A5B57839237BF9D3000350DE /* UIGestureRecognizer+inx.swift in Sources */,
 				A51CB117237A81BC00683A43 /* UIColor+inx.swift in Sources */,
+				A5177BC823823235008603A0 /* FakeBar.swift in Sources */,
 				A5C9CBD7236FCE2C00ADD94E /* NSDate+inx.swift in Sources */,
 				A5EED4C7236C3066003008F9 /* Assistant.swift in Sources */,
 				A5B5782F237BD7D6000350DE /* UIImage+inx.swift in Sources */,
