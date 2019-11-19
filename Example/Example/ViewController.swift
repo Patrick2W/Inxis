@@ -13,10 +13,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "首页"
 //        let img = UIImage.inx.image(.blue)
         let img = UIImage.inx.gradient([UIColor.red, UIColor.yellow],
                                        size: CGSize(width: view.inx.width, height: 88))
-        barConfig = BarConfig(image: img, translucent: false)
+        barConfig = BarConfig(titleFont: UIFont.systemFont(ofSize: 17), image: img, translucent: false, style: .black)
         
 //        showViewFrame()
 //        showNowInfo()

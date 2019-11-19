@@ -24,4 +24,10 @@ extension UIViewController {
             return BarConfig.appearance
         }
     }
+    
+    public func updateNavBarIfNeeds() {
+        if let bar = self.navigationController?.navigationBar as? NavBar {
+            bar.barConfig = self.barConfig
+        }
+    }
 }

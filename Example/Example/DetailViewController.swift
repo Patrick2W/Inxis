@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .blue
-        
+        title = "详情"
         
         if UIColor.inx.RGB(10, green: 1, blue: 11) == UIColor.inx.RGBA(10, green: 1, blue: 11, alpha: 0.5) {
             print("颜色相同======")
@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
         
 //        let color = UIColor.inx.gradient([UIColor.red, UIColor.yellow], size: CGSize(width: view.inx.width, height: 88))
         let img = UIImage.inx.gradient([UIColor.red, UIColor.yellow], size: CGSize(width: view.inx.width, height: 88))
-        barConfig = BarConfig(image: img, translucent: false)
+        barConfig = BarConfig(titleFont: UIFont.systemFont(ofSize: 10), image: img, translucent: false, style: .default)
 //        self.navigationController?.navigationBar.setBackgroundImage(img, for: .default)
 //        self.navigationController?.navigationBar.barTintColor = .black
         
