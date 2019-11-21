@@ -25,6 +25,7 @@
 		A5C9CBD5236FB3F900ADD94E /* UIView+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9CBD4236FB3F900ADD94E /* UIView+inx.swift */; };
 		A5C9CBD7236FCE2C00ADD94E /* NSDate+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9CBD6236FCE2C00ADD94E /* NSDate+inx.swift */; };
 		A5CB8FAE23795F31006FA501 /* UIViewController+inx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB8FAD23795F31006FA501 /* UIViewController+inx.swift */; };
+		A5E0D00D23863E4E008F598E /* Inxis.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A5E0D00C23863E4E008F598E /* Inxis.podspec */; };
 		A5EED4A0236C2AC9003008F9 /* Inxis.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EED49E236C2AC9003008F9 /* Inxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5EED4C7236C3066003008F9 /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED4C6236C3066003008F9 /* Assistant.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		A5C9CBD4236FB3F900ADD94E /* UIView+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+inx.swift"; sourceTree = "<group>"; };
 		A5C9CBD6236FCE2C00ADD94E /* NSDate+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+inx.swift"; sourceTree = "<group>"; };
 		A5CB8FAD23795F31006FA501 /* UIViewController+inx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+inx.swift"; sourceTree = "<group>"; };
+		A5E0D00C23863E4E008F598E /* Inxis.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Inxis.podspec; path = ../Inxis.podspec; sourceTree = "<group>"; };
 		A5EED49B236C2AC9003008F9 /* Inxis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Inxis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5EED49E236C2AC9003008F9 /* Inxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inxis.h; sourceTree = "<group>"; };
 		A5EED49F236C2AC9003008F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		A5EED491236C2AC9003008F9 = {
 			isa = PBXGroup;
 			children = (
+				A5E0D00C23863E4E008F598E /* Inxis.podspec */,
 				A5EED49D236C2AC9003008F9 /* Inxis */,
 				A5EED49C236C2AC9003008F9 /* Products */,
 			);
@@ -203,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E0D00D23863E4E008F598E /* Inxis.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

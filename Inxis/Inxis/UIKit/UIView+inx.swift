@@ -10,114 +10,76 @@ import UIKit
 
 public extension Assistant where Target: UIView {
     
-    var minX: CGFloat {
-        set {
-            var frame = target.frame
-            frame.origin.x = newValue
-            target.frame = frame
-        }
-        get {
-            return target.frame.origin.x
-        }
+    var minX: CGFloat { return target.frame.origin.x }
+    var minY: CGFloat { return target.frame.origin.y }
+    var centerX: CGFloat { return target.center.x }
+    var centerY: CGFloat { return target.center.y }
+    var maxX: CGFloat { return target.inx.minX + target.inx.height }
+    var maxY: CGFloat { return target.inx.minY + target.inx.width }
+    var height: CGFloat { return target.frame.height }
+    var width: CGFloat { return target.frame.width }
+    var origin: CGPoint { return target.frame.origin }
+    var size: CGSize { return target.frame.size }
+    var cornerRadius: CGFloat { return target.layer.cornerRadius }
+    
+    func setMinX(_ value: CGFloat) {
+        var frame = target.frame
+        frame.origin.x = value
+        target.frame = frame
     }
     
-    var minY: CGFloat {
-        set {
-            var frame = target.frame
-            frame.origin.y = newValue
-            target.frame = frame
-        }
-        get {
-            return target.frame.origin.y
-        }
+    func setMinY(_ value: CGFloat) {
+        var frame = target.frame
+        frame.origin.y = value
+        target.frame = frame
     }
     
-    var centerX: CGFloat {
-        set {
-            var center = target.center
-            center.x = newValue
-            target.center = center
-        }
-        get {
-            return target.center.x
-        }
+    func setCenterX(_ value: CGFloat) {
+        var center = target.center
+        center.x = value
+        target.center = center
     }
     
-    var centerY: CGFloat {
-        set {
-            var center = target.center
-            center.y = newValue
-            target.center = center
-        }
-        get {
-            return target.center.y
-        }
+    func setCenterY(_ value: CGFloat) {
+        var center = target.center
+        center.y = value
+        target.center = center
     }
     
-    var maxX: CGFloat {
-        set {
-            var frame = target.frame
-            frame.origin.x = newValue - target.inx.height
-            target.frame = frame
-        }
-        get {
-            return target.inx.minX + target.inx.height
-        }
+    func setMaxX(_ value: CGFloat) {
+        var frame = target.frame
+        frame.origin.x = value - target.inx.height
+        target.frame = frame
     }
     
-    var maxY: CGFloat {
-        set {
-            var frame = target.frame
-            frame.origin.y = newValue - target.inx.width
-            target.frame = frame
-        }
-        get {
-            return target.inx.minY + target.inx.width
-        }
+    func setMaxY(_ value: CGFloat) {
+        var frame = target.frame
+        frame.origin.y = value - target.inx.width
+        target.frame = frame
     }
     
-    var height: CGFloat {
-        set {
-            var frame = target.frame
-            frame.size.height = newValue
-            target.frame = frame
-        }
-        get {
-            return target.frame.height
-        }
+    func setHeight(_ value: CGFloat) {
+        var frame = target.frame
+        frame.size.height = value
+        target.frame = frame
     }
     
-    var width: CGFloat {
-        set {
-            var frame = target.frame
-            frame.size.width = newValue
-            target.frame = frame
-        }
-        get {
-            return target.frame.width
-        }
+    func setWidth(_ value: CGFloat) {
+        var frame = target.frame
+        frame.size.width = value
+        target.frame = frame
     }
     
-    var origin: CGPoint {
-        get {
-            return target.frame.origin
-        }
-        set {
-            var frame = target.frame
-            frame.origin = newValue
-            target.frame = frame
-        }
+    func setOrigin(_ origin: CGPoint) {
+        var frame = target.frame
+        frame.origin = origin
+        target.frame = frame
     }
     
-    var size: CGSize {
-        get {
-            return target.frame.size
-        }
-        set {
-            var frame = target.frame
-            frame.size = newValue
-            target.frame = frame
-        }
+    func setSize(_ size: CGSize) {
+        var frame = target.frame
+        frame.size = size
+        target.frame = frame
     }
     
     func removeAllSubviews() {
@@ -126,17 +88,7 @@ public extension Assistant where Target: UIView {
         }
     }
     
-    var cornerRadius: CGFloat {
-        set {
-            target.layer.cornerRadius = newValue
-            target.layer.masksToBounds = newValue > 0
-        }
-        get {
-            return target.layer.cornerRadius
-        }
-    }
-    
-    func setRadius(radius: CGFloat, rectCorner: UIRectCorner) {
+    func setCorner(radius: CGFloat, rectCorner: UIRectCorner = .allCorners) {
         if #available(iOS 11.0, *) {
             target.layer.cornerRadius = radius
             target.layer.maskedCorners = CACornerMask(rawValue: rectCorner.rawValue)
