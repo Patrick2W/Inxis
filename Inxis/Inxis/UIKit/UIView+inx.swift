@@ -102,4 +102,9 @@ public extension Assistant where Target: UIView {
             target.layer.mask = mask
         }
     }
+    
+    static func load(_ nibName: String, bundle: Bundle = .main) -> Target {
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        return nib.instantiate(withOwner: nil, options: nil).last as! Target
+    }
 }
