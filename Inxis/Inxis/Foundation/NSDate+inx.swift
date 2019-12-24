@@ -41,6 +41,9 @@ public extension Assistant where Target: NSDate {
     var isYesterday: Bool { return tomorrow.inx.isToday }
     var isTomorrow: Bool { return yesterday.inx.isToday }
     
+    var firstDayOfMonth: Date? { return date(byAdding: -day + 1) }
+    var endDayOfMonth: Date? { return date(byAdding: -day, months: 1) }
+    
     func date(byAdding days: Int = 0, months: Int = 0, years: Int = 0) -> Date? {
         var components = DateComponents()
         components.day = days
@@ -65,6 +68,28 @@ public extension Assistant where Target: NSDate {
         dateFormart.timeZone = timeZone
         dateFormart.locale = locale
         return dateFormart.string(from: target as Date)
+    }
+    
+    static func date(with year: Int, month: Int, day: Int, hour: Int = 0, minute: Int = 0, secend: Int = 0) -> Date? {
+        var components = DateComponents()
+        components.second = secend
+        components.minute = minute
+        components.hour = hour
+        components.day = day
+        components.month = month
+        components.year = year
+        return Calendar.current.date(from: components)
+    }
+    
+    static func toDate(_ dateString: String,
+                       formart: String,
+                       timeZone: TimeZone? = nil,
+                       locale: Locale? = nil) -> Date? {
+        let dateFormart = DateFormatter()
+        dateFormart.dateFormat = formart
+        if let tz = timeZone { dateFormart.timeZone = tz }
+        if let lc = locale { dateFormart.locale = lc }
+        return dateFormart.date(from: dateString)
     }
 }
 

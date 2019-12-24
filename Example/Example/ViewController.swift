@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         barConfig = BarConfig(titleFont: UIFont.systemFont(ofSize: 17), image: img, translucent: false, style: .black)
         
 //        showViewFrame()
-//        showNowInfo()
+        showNowInfo()
 //        setGradientBackground()
     }
     
@@ -48,6 +48,8 @@ class ViewController: UIViewController {
         print("weekdayOrdinal: \(now.inx.weekdayOrdinal)")
         print("weekOfMonth: \(now.inx.weekOfMonth)")
         print("weekOfYear: \(now.inx.weekOfYear)")
+        print("endDayOfMonth: \(now.inx.endDayOfMonth!)")
+        print("firstDayOfMonth: \(now.inx.firstDayOfMonth!)")
         
         print(now.inx.toString("yyyy-MM-dd"))
         let adding = now.inx.date(byAdding: 0, months: 1, years: -1) as NSDate?
