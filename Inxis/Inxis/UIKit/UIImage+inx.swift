@@ -17,7 +17,7 @@ public extension Assistant where Target: UIImage {
         context?.setFillColor(color.cgColor)
         context?.fill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
-        context?.restoreGState()
+        //context?.restoreGState()
         UIGraphicsEndImageContext()
         return image
     }
@@ -36,7 +36,7 @@ public extension Assistant where Target: UIImage {
                                     end: CGPoint(x: size.width, y: size.height),
                                     options: CGGradientDrawingOptions(rawValue: 0))
         let image = UIGraphicsGetImageFromCurrentImageContext()
-        context?.restoreGState()
+        //context?.restoreGState()
         UIGraphicsEndImageContext()
         return image
     }
